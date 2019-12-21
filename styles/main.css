@@ -1,88 +1,128 @@
 /*Globales*/
-*{
-    margin:auto;
-    padding: 0;
-    box-sizing: border-box;
-    
+* {
+  margin: auto;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-section{
-    width:100%
+section {
+  width: 100%;
 }
 
-h2{
-    text-shadow: 10px 5px 5px #aaa;
+h2 {
+  text-shadow: 10px 5px 5px #aaa;
 }
 
 /*Sección 1*/
 
-.clase1{
-background-color: aqua;
-height:300px;
-
+.clase1 {
+  background-color: aqua;
+  height: 300px;
 }
 
-.clase1 div{
-width:30%;
-background-color: burlywood;
-margin-top: 100px;
-border-radius: 10px;
-display: inline-block;
-padding:10px;
-box-shadow: 20px 10px 10px #aaa, inset -30px -30px 20px #f00;
-transition: transform 2s,background-color 1s, color 1s, width 1s;
+.clase1 div {
+  width: 30%;
+  background-color: burlywood;
+  margin-top: 100px;
+  border-radius: 10px;
+  display: inline-block;
+  padding: 10px;
+  box-shadow: 20px 10px 10px #aaa, inset -30px -30px 20px #f00;
+  transition: transform 2s, background-color 1s, color 1s, width 1s;
 }
 
-.clase1 div:hover{
-
-    transform: rotate(-12deg);
-    background-color: lawngreen;
-    color: white;
-    width:40%;
+.clase1 div:hover {
+  transform: rotate(-12deg);
+  background-color: lawngreen;
+  color: white;
+  width: 40%;
 }
-.clase1 div ul{
-    list-style: none;
-    display:flex;
-    
-
+.clase1 div ul {
+  list-style: none;
+  display: flex;
 }
-.clase1 div a{
-text-decoration: none;
-font-size: 20px;
-color: cornflowerblue;
+.clase1 div a {
+  text-decoration: none;
+  font-size: 20px;
+  color: cornflowerblue;
 }
-
 
 /*Sección 2*/
 
-.clase2{
-    background-color: rgb(34, 160, 23);
-    height:300px;
+.clase2 {
+  background-color: rgb(34, 160, 23);
+  height: 300px;
 }
 
- .clase2 div{
-    width:30%;
-    background-color: rgb(216, 140, 40);
-    margin-top: 100px;
-    margin-left:5%;
-    border-radius: 10px;
-    display: inline-block;
-    padding:10px;
-    animation-name: animacion1;
-    animation-duration: 2s;
-    animation-iteration-count: infinite;
-    animation-direction: alternate;
+.clase2 div {
+  width: 30%;
+  background-color: rgb(216, 140, 40);
+  margin-top: 100px;
+  margin-left: 5%;
+  border-radius: 10px;
+  display: inline-block;
+  padding: 10px;
+  animation-name: animacion1;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+}
 
- }
-
- @keyframes animacion1 {
-    from {
-      margin-left:5%;
-      background-color:#ddd;
-    }
-    to {
-      margin-left:40%; 
-      background-color:#ff0;
-    }
+@keyframes animacion1 {
+  from {
+    margin-left: 5%;
+    background-color: #ddd;
   }
+  to {
+    margin-left: 40%;
+    background-color: #ff0;
+  }
+}
 
+/* Sección 3 */
+
+.clase3 {
+    background: linear-gradient(70deg, blue, rgb(15, 4, 80));
+    height: 300px;
+}
+
+.clase3 div {
+  height: 200px;
+  width: 200px;
+  display: inline-block;
+  margin-top: 100px;
+  border-radius: 10px;
+  padding: 10px;
+  background-color: #ff0;
+  animation-name: animacion2;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+}
+
+@keyframes animacion2 {
+    10% {
+      
+      background-color: #ddd;
+    }
+    20% {
+    
+      background-color: rgb(48, 158, 20);
+    }
+      40% {
+      
+        background-color: rgb(70, 31, 161);
+      }
+      60% {
+     
+        background-color: rgb(180, 93, 173);
+      }
+      80% {
+     
+        background-color: rgb(202, 87, 20);
+      }
+
+      100% {
+   
+        background-color: rgb(0, 174, 255);
+      }
+  }
